@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'reactstrap';
 import logo from './logo.svg';
 import './App.css';
 
@@ -14,6 +15,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
       <p>Hello {process.env.REACT_APP_DOMAIN}</p>
+       <Button outline color="danger">danger</Button>
       </div>
     );
   }
