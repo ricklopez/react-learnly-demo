@@ -3,7 +3,15 @@ import { Button } from 'reactstrap';
 import logo from './logo.svg';
 import './App.css';
 
+import SignInForm from './SignInForm'
+
 class App extends Component {
+  
+  submit = values => {
+    // print the form values to the console
+    console.log(values)
+  }
+  
   render() {
     return (
       <div className="App">
@@ -15,7 +23,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
       <p>Hello {process.env.REACT_APP_DOMAIN}</p>
-       <Button outline color="danger">danger</Button>
+       <SignInForm onSubmit={this.submit}/>
       </div>
     );
   }
