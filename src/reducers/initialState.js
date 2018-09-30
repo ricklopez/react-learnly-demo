@@ -1,6 +1,7 @@
 export default function(resolvers) {
   return {
     home: {
+      test:"value",
       h1_1: "Lorem Ipsum",
       p_1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       form_h2_1: "non diam phasellus"  
