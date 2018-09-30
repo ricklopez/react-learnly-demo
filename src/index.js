@@ -9,16 +9,16 @@ import ReduxPromise from 'redux-promise';
 
 /*Styles*/
 import 'bootstrap/dist/css/bootstrap.css';
-import './index.css';
+import './assets/styles/index.css';
 
 /*Containers*/
-import Home from './Home';
-import SignIn from './SignIn';
-import App from './App';
+import Home from './containers/Home';
+import SignIn from './containers/SignIn';
+import App from './containers/App';
 
 /*Services*/
 import reducers from './reducers';
-import registerServiceWorker from './registerServiceWorker';
+import registerServiceWorker from './lib/registerServiceWorker';
 
 const store = createStore(reducers,composeWithDevTools(applyMiddleware(ReduxPromise)));
 window.store = store;
