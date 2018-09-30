@@ -4,7 +4,7 @@ import './../assets/styles/App.css';
 
 import SignInForm from './../components/SignInForm'
 
-class App extends Component {
+class SignIn extends Component {
   
   submit = values => {
     // print the form values to the console
@@ -28,4 +28,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default SignIn;

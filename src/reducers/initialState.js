@@ -11,8 +11,8 @@ export default function(resolvers) {
     },
     public: {
       courses: {
-        live: [],
-        video:[]
+        live: [{id: 1, title:  "Lorem Ipsum", comver_img:"https://via.placeholder.com/350x350"}, {id: 2, title:  "Lorem Ipsum", comver_img:"https://via.placeholder.com/350x350"},{id: 3, title:  "Lorem Ipsum", comver_img:"https://via.placeholder.com/350x350"}, {id: 4, title:  "Lorem Ipsum", comver_img:"https://via.placeholder.com/350x350"}],
+        video: [{id: 1, title:  "Lorem Ipsum", comver_img:"https://via.placeholder.com/350x350"}, {id: 2, title:  "Lorem Ipsum", comver_img:"https://via.placeholder.com/350x350"},{id: 3, title:  "Lorem Ipsum", comver_img:"https://via.placeholder.com/350x350"}, {id: 4, title:  "Lorem Ipsum", comver_img:"https://via.placeholder.com/350x350"}],
       }
     },
     auth: {
