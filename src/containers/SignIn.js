@@ -1,24 +1,31 @@
 import React, { Component } from 'react';
-import { Button } from 'reactstrap';
-import logo from './logo.svg';
-import './App.css';
+import logo from './../assets/img/logo.svg';
+import './../assets/styles/App.css';
 
-class App extends Component {
+import SignInForm from './../components/SignInForm'
+
+class SignIn extends Component {
+  
+  submit = values => {
+    // print the form values to the console
+    console.log(values)
+  }
+  
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Home</h1>
+          <h1 className="App-title">Sign In</h1>
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
       <p>Hello {process.env.REACT_APP_DOMAIN}</p>
-       <Button outline color="danger">danger</Button>
+       <SignInForm/>
       </div>
     );
   }
 }
 
-export default App;
+export default SignIn;
