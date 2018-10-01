@@ -3,9 +3,9 @@ import { Field, reduxForm } from 'redux-form'
 import { Button, Form, FormGroup } from 'reactstrap';
 
 let EmailForm = props => {
-  const { handleSubmit } = props
+  const { handleSubmit } = props;
   return (
-    <Form inline onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit} className={props.emailSubmit ? 'd-none' : ''} inline>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
 
         <Field name="email" component="input" type="email" className="form-control" placeholder="email@example.com" />

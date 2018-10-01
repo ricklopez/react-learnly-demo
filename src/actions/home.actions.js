@@ -3,11 +3,21 @@ import axios from 'axios';
 
 
 export function fetchCourses(data){
-  const reqPromise = axios.get("http://node-labs-ricklopez.codeanyapp.com:3001/courses");
-  console.log("fetchCourses");
+  const reqPromise = axios.get(process.env.REACT_APP_COURSES);
   return {
     type: types.FETCH_COURSES,
     payload: reqPromise
+  }
+  
+}
+
+export function emailFormSubmitted(data){
+  //TODO: Handle the email sign up
+  console.log("emailFormSubmitted", data);
+  
+  return {
+    type: types.EMAIL_SIGN_UP,
+    payload: true
   }
   
 }

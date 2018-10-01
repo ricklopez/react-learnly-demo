@@ -22,7 +22,7 @@ class SignIn extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
       <p>Hello {process.env.REACT_APP_DOMAIN}</p>
-       <SignInForm onSubmit={this.submit}/>
+       <SignInForm/>
       </div>
     );
   }
