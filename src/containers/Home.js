@@ -1,19 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
-import { 
-  Jumbotron,
-  Navbar,
-  NavbarBrand,
-  Nav,
-  NavItem
-} from 'reactstrap';
+import { Jumbotron } from 'reactstrap';
 import logo from './../assets/img/logo.svg';
 import './../assets/styles/Home.css';
 
 import EmailForm from './../components/EmailForm';
 import CardGridRow from './../components/CardGridRow';
+import NavSimple from './../components/NavSimple';
 
 import {fetchCourses, emailFormSubmitted} from './../actions/home.actions';
 
@@ -25,17 +19,12 @@ class Home extends Component {
     this.props.fetchCourses();
   }
   
+  
   render() {
+    const navListItems = [["/sign-in", 'Sign In']];
     return (
       <div className="App">
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/"><img src={logo} className="App-logo" alt="logo" /> React Learnly</NavbarBrand>
-          <Nav className="ml-auto" navbar>
-              <NavItem>
-                <Link to="/sign-in">Sign In</Link>
-              </NavItem>
-            </Nav>
-        </Navbar>
+        <NavSimple logo={logo} navList={navListItems}/>
         <Jumbotron>
           <h1 className="display-3">{this.props.home.h1_1}</h1>
           <p className="lead">{this.props.home.p_1}</p>

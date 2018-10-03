@@ -4,9 +4,6 @@ body {
   font-family: sans-serif;
 }
 
-input.form-control {
-  margin: 10px 0 0 0;
-}
 
 /*Album Styles*/
 :root {
@@ -39,7 +36,6 @@ footer {
 footer p {
   margin-bottom: .25rem;
 }
-
 
 
 /*Small devices (landscape phones, 576px and up)*/
