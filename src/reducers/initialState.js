@@ -23,11 +23,19 @@ export default function(resolvers) {
     auth: {
       isAuthenticated: false,
       h1_1: "Lorem Ipsum",
-      user:null,
-      courses: {
-        live: [],
-        video: []
-      }
+      user:null
+    },
+    app: {
+      labels:{
+        live: 'Live Online Courses',
+        video: 'New Video Courses'
+      },
+      h1_1: "Hello",
+      p_1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    courses: {
+      live: [],
+      video: []
     }
   }
 }
