@@ -1,0 +1,9 @@
+form.form-inline {
+  justify-content: center;
+  flex: 1;
+}
+
+p.lead.text-success {
+    justify-content: center;
+    flex: 1;
+}
