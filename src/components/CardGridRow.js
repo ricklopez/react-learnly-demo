@@ -5,7 +5,7 @@ export default (props) => {
   
   const liveList = props.courses.map((item, i) => {
     return(
-    <CardGridItem title={item.title} img={item.coverImg} key={item.id} />
+    <CardGridItem title={item.title} img={item.coverImg} url={item.url ? item.url : false} key={item.id} />
   )});
   return (
     <main role="main">
